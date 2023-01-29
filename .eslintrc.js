@@ -9,6 +9,7 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:react/recommended',
 		'plugin:@typescript-eslint/recommended',
+		'plugin:react/jsx-runtime', // 兼容 jsx 新的语法
 	],
 	overrides: [],
 	parser: '@typescript-eslint/parser',
@@ -16,5 +17,5 @@ module.exports = {
 		ecmaVersion: 'latest',
 	},
 	plugins: ['react', '@typescript-eslint'],
-	rules: {},
+	rules: { '@typescript-eslint/no-var-requires': 0 },
 };
